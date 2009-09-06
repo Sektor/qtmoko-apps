@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name[]=qAlsaMixer
+Exec=qalsamixer
+Icon=qalsamixer/qalsamixer
+Type=Application
+Categories=Application;
