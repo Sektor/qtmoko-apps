@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name[]=QGoogleTranslate
+Comment[]=Google Translate service client
+Exec=qgt
+Icon=qgt/icon
+Terminal=false
+Type=Application
+Categories=Application;
