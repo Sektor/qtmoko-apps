@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name[]=mqutIM
+Comment[]=Mobile IM client
+Exec=mqutim
+Icon=mqutim/qutim
+Type=Application
+Categories=Application;

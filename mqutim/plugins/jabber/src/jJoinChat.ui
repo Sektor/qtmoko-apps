@@ -1,0 +1,276 @@
+<ui version="4.0" >
+ <class>JoinChat</class>
+ <widget class="QWidget" name="JoinChat" >
+  <property name="windowModality" >
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>256</width>
+    <height>228</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Join groupchat</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>241</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="currentIndex" >
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab" >
+    <attribute name="title" >
+     <string>Settings</string>
+    </attribute>
+    <widget class="QPushButton" name="joinButton" >
+     <property name="geometry" >
+      <rect>
+       <x>0</x>
+       <y>150</y>
+       <width>75</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>Join</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="autoJoinCheckBox" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>120</y>
+       <width>71</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="layoutDirection" >
+      <enum>Qt::RightToLeft</enum>
+     </property>
+     <property name="text" >
+      <string>Auto join</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="nickLineEdit" >
+     <property name="geometry" >
+      <rect>
+       <x>90</x>
+       <y>40</y>
+       <width>141</width>
+       <height>24</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="passwordLineEdit" >
+     <property name="geometry" >
+      <rect>
+       <x>90</x>
+       <y>70</y>
+       <width>141</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="echoMode" >
+      <enum>QLineEdit::Password</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>64</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>Password</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="closeButton" >
+     <property name="geometry" >
+      <rect>
+       <x>160</x>
+       <y>150</y>
+       <width>75</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>Close</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="saveButton" >
+     <property name="geometry" >
+      <rect>
+       <x>80</x>
+       <y>150</y>
+       <width>75</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>Save</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>64</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>Nick</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>81</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>Conference</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="conferenceNameLineEdit" >
+     <property name="geometry" >
+      <rect>
+       <x>90</x>
+       <y>10</y>
+       <width>141</width>
+       <height>24</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="conferenceLineEdit" >
+     <property name="geometry" >
+      <rect>
+       <x>91</x>
+       <y>100</y>
+       <width>141</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="sizePolicy" >
+      <sizepolicy vsizetype="Fixed" hsizetype="Expanding" >
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="editable" >
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>64</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>Name</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2" >
+    <attribute name="title" >
+     <string>Bookmarks</string>
+    </attribute>
+    <widget class="QGroupBox" name="bookmarkBox" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>221</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="title" >
+      <string>Bookmarks</string>
+     </property>
+     <widget class="QListWidget" name="conferenceListWidget" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>171</width>
+        <height>151</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="addConferenceButton" >
+      <property name="geometry" >
+       <rect>
+        <x>190</x>
+        <y>20</y>
+        <width>26</width>
+        <height>25</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="removeConferenceButton" >
+      <property name="geometry" >
+       <rect>
+        <x>190</x>
+        <y>50</y>
+        <width>26</width>
+        <height>25</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>conferenceNameLineEdit</tabstop>
+  <tabstop>conferenceLineEdit</tabstop>
+  <tabstop>nickLineEdit</tabstop>
+  <tabstop>passwordLineEdit</tabstop>
+  <tabstop>autoJoinCheckBox</tabstop>
+  <tabstop>saveButton</tabstop>
+  <tabstop>joinButton</tabstop>
+  <tabstop>closeButton</tabstop>
+  <tabstop>conferenceListWidget</tabstop>
+  <tabstop>addConferenceButton</tabstop>
+  <tabstop>removeConferenceButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>closeButton</sender>
+   <signal>clicked()</signal>
+   <receiver>JoinChat</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>466</x>
+     <y>271</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>256</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

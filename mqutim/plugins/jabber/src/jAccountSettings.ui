@@ -1,0 +1,214 @@
+<ui version="4.0" >
+ <class>jAccountSettingsClass</class>
+ <widget class="QWidget" name="jAccountSettingsClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>210</width>
+    <height>265</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>jAccountSettings</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout" >
+   <item row="3" column="0" >
+    <widget class="QLabel" name="priorityLabel" >
+     <property name="text" >
+      <string>Priority</string>
+     </property>
+     <property name="alignment" >
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="buddy" >
+      <cstring>prioritySpinBox</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0" >
+    <widget class="QLabel" name="encryptLabel" >
+     <property name="text" >
+      <string>Encrypt</string>
+     </property>
+     <property name="alignment" >
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="buddy" >
+      <cstring>tlsComboBox</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0" colspan="4" >
+    <widget class="QCheckBox" name="autologinCheck" >
+     <property name="sizePolicy" >
+      <sizepolicy vsizetype="Fixed" hsizetype="Expanding" >
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text" >
+      <string>Autoconnect</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0" colspan="4" >
+    <widget class="QCheckBox" name="compressCheckBox" >
+     <property name="sizePolicy" >
+      <sizepolicy vsizetype="Fixed" hsizetype="Expanding" >
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text" >
+      <string>Use compression</string>
+     </property>
+     <property name="checked" >
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" >
+    <widget class="QLabel" name="jidLabel" >
+     <property name="text" >
+      <string>JID</string>
+     </property>
+     <property name="alignment" >
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="buddy" >
+      <cstring>jidEdit</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1" >
+    <widget class="QLineEdit" name="jidEdit" >
+     <property name="sizePolicy" >
+      <sizepolicy vsizetype="Fixed" hsizetype="Expanding" >
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="layoutDirection" >
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="readOnly" >
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" >
+    <widget class="QLabel" name="passwordLabel" >
+     <property name="text" >
+      <string>Password</string>
+     </property>
+     <property name="alignment" >
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="buddy" >
+      <cstring>paswdEdit</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1" >
+    <widget class="QLineEdit" name="paswdEdit" >
+     <property name="inputMask" >
+      <string/>
+     </property>
+     <property name="echoMode" >
+      <enum>QLineEdit::Password</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" >
+    <widget class="QLabel" name="resourceLabel" >
+     <property name="text" >
+      <string>Resource</string>
+     </property>
+     <property name="alignment" >
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="buddy" >
+      <cstring>resourceEdit</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1" >
+    <widget class="QLineEdit" name="resourceEdit" >
+     <property name="inputMask" >
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1" >
+    <widget class="QSpinBox" name="prioritySpinBox" >
+     <property name="sizePolicy" >
+      <sizepolicy vsizetype="Fixed" hsizetype="Expanding" >
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimum" >
+      <number>-127</number>
+     </property>
+     <property name="maximum" >
+      <number>128</number>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1" >
+    <widget class="QComboBox" name="tlsComboBox" >
+     <property name="sizePolicy" >
+      <sizepolicy vsizetype="Fixed" hsizetype="Expanding" >
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="currentIndex" >
+      <number>1</number>
+     </property>
+     <item>
+      <property name="text" >
+       <string>Never</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>When available</string>
+      </property>
+     </item>
+     <item>
+      <property name="text" >
+       <string>Always</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="7" column="0" >
+    <spacer name="verticalSpacer" >
+     <property name="orientation" >
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0" >
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <tabstops>
+  <tabstop>jidEdit</tabstop>
+  <tabstop>paswdEdit</tabstop>
+  <tabstop>resourceEdit</tabstop>
+  <tabstop>prioritySpinBox</tabstop>
+  <tabstop>tlsComboBox</tabstop>
+  <tabstop>autologinCheck</tabstop>
+  <tabstop>compressCheckBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
