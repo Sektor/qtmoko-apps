@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name[]=Eyepiece
+Comment[]=DjVu/PDF Viewer
+Exec=eyepiece
+Icon=eyepiece/eyepiece
+Type=Application
+Categories=Application;

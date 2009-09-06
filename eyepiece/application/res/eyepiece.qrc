@@ -1,0 +1,39 @@
+<RCC>
+	<qresource>
+		
+		<file>1_nrml.pic</file>
+		<file>1_prss.pic</file>
+<!--    <file>1_dsbl.pic</file>  -->
+
+		<file>2_nrml.pic</file>
+		<file>2_prss.pic</file>
+<!--    <file>2_dsbl.pic</file>  -->
+
+		<file>3_nrml.pic</file>
+		<file>3_prss.pic</file>
+		
+		<file>4_nrml.pic</file>
+		<file>4_prss.pic</file>
+		
+		<file>5_nrml.pic</file>
+		<file>5_prss.pic</file>
+		
+		<file>6_nrml.pic</file>
+		<file>6_prss.pic</file>
+		
+		<file>7_nrml.pic</file>
+		<file>7_prss.pic</file>
+
+		<file>0.pic</file>
+		<file>1.pic</file>
+		<file>2.pic</file>
+		<file>3.pic</file>
+		<file>4.pic</file>
+		<file>5.pic</file>
+		<file>6.pic</file>
+		<file>7.pic</file>
+		<file>8.pic</file>
+		<file>9.pic</file>
+
+	</qresource>
+</RCC>
