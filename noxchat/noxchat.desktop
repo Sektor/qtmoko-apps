@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name[]=NoxChat
+Comment[]=IRC client
+Exec=noxchat
+Terminal=false
+Type=Application
+Categories=Application;
+Icon=noxchat/icon

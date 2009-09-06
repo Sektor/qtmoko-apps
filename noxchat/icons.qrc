@@ -1,0 +1,13 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+	<qresource>
+		<file alias="icon.png">icons/icon.png</file>
+		<file alias="nuovo.png">icons/nuovo.png</file>
+		<file alias="exit.png">icons/exit.png</file>
+		<file alias="notify_list.png">icons/notify_list.png</file>
+		<file alias="op.png">icons/op.png</file>
+		<file alias="user.png">icons/user.png</file>
+		<file alias="voice.png">icons/voice.png</file>
+		<file alias="halfop.png">icons/halfop.png</file>
+	</qresource>
+</RCC>

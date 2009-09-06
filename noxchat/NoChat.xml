@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE NoChat>
+<NoChat>
+        <servers>
+                <server port="6667" host="irc.freenode.net" />
+        </servers>
+        <identities>
+                <identity password="" nick="noxchat_tester" real_name="NoxChat Tester" away="Away" />
+                <identity password="" nick="noxchat_tester_" real_name="NoxChat Tester" away="Away" />
+                <identity password="" nick="noxchat_tester1" real_name="NoxChat Tester" away="Away" />
+        </identities>
+        <notify/>
+</NoChat>
