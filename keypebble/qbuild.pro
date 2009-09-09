@@ -32,7 +32,7 @@ SOURCES=d3des.c \
 
 pkg [
     name=keypebble
-    desc="Keypebble is a VNC client for Qt Extended."
+    desc="VNC client for Qt Extended"
     version=$$QTOPIA_VERSION
     license=$$QTOPIA_LICENSE
     maintainer=$$QTOPIA_MAINTAINER
