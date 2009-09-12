@@ -43,7 +43,7 @@ private:
 
 private slots:
     void btnRegisterClick();
-    void registrationResult(QString jid, RegistrationResult result);
+//    void registrationResult(QString jid, RegistrationResult result); //
 };
 
 #endif

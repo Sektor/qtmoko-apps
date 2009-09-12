@@ -184,8 +184,8 @@ public:
 	void handleEvent (const Event &event);
 	void showTransportReg(const QString &jid);
 	void removeTransportReg(const QString &jid);
-	void LogOutTransport(const QString &jid);
-	void LogInTransport(const QString &jid);
+//	void LogOutTransport(const QString &jid); //
+//	void LogInTransport(const QString &jid); //
 	void setRecentBookmarks(const BookmarkList &b_list, const ConferenceList &c_list);
 
 signals:

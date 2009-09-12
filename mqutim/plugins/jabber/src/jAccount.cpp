@@ -209,8 +209,8 @@ void jAccount::showChangeResourceDialog()
 void jAccount::createAccountButton(QHBoxLayout *account_button_layout)
 {
 	m_account_button = new QToolButton();
-	m_account_button->setMinimumSize(QSize(22, 22));
-	m_account_button->setMaximumSize(QSize(22, 22));
+        //m_account_button->setMinimumSize(QSize(22, 22)); //
+        m_account_button->setMaximumSize(QSize(55, 55)); //
 	m_account_button->setAutoRaise(true);
 #if defined(Q_OS_MAC)
 	account_button_layout->addWidget(m_account_button, 0, Qt::AlignLeft);

@@ -174,7 +174,7 @@ target [
 plugins_bin [
     hint=image generated
     files = plugins/icq/libicq.so
-#    files+= plugins/jabber/libjabber.so
+    files+= plugins/jabber/libjabber.so
     path = /plugins/mqutim
 ]
 

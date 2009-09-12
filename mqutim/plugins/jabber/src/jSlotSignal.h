@@ -77,8 +77,8 @@ public slots:
 	void tagHandled(const QString &xml, bool in);
 	void createXmlConsole();
 	void destroyXmlConsole();
-	void createBookmark();
-	void destroyBookmark();
+//	void createBookmark(); //
+//	void destroyBookmark(); //
 
 private:
 	jAccount *m_jabber_account;

@@ -969,13 +969,13 @@ void jRoster::onUnregisterAction()
 void jRoster::onLogInTransportAction()
 {
     QString jid = jProtocol::getBare(m_menu_name);
-    m_jabber_protocol->LogInTransport(jid);
+    //m_jabber_protocol->LogInTransport(jid); //COMMENTED
 }
 
 void jRoster::onLogOutTransportAction()
 {
     QString jid = jProtocol::getBare(m_menu_name);
-    m_jabber_protocol->LogOutTransport(jid);
+    //m_jabber_protocol->LogOutTransport(jid); //COMMENTED
 }
 
 void jRoster::updateIcon(const QString &jid, const QString &name)
