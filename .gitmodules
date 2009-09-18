@@ -1,0 +1,6 @@
+[submodule "qtpedometer"]
+	path = qtpedometer
+	url = git://github.com/radekp/qtpedometer.git
+[submodule "qtopiagps"]
+	path = qtopiagps
+	url = git://github.com/radekp/qtopiagps.git
