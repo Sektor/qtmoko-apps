@@ -11,7 +11,7 @@ SUBDIRS = \
     keypebble \
     shopper \
     keyboard-addons/keyboard-russian-abc \
-#    keyboard-addons/keyboard-skin-silver \
+    keyboard-addons/keyboard-skin-silver \
 #    qtopiagps \
     qtpedometer
 
