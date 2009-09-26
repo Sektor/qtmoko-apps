@@ -1,0 +1,6 @@
+[Desktop Entry]
+Comment[]=Codecs installer (mp3)
+Exec=codecsinstaller
+Icon=codecsinstaller/codecsinstaller
+Type=Application
+Name[]=Codecs installer

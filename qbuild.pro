@@ -13,5 +13,6 @@ SUBDIRS = \
     keyboard-addons/keyboard-russian-abc \
     keyboard-addons/keyboard-skin-silver \
 #    qtopiagps \
-    qtpedometer
+    qtpedometer \
+    codecs
 
