@@ -4,3 +4,6 @@
 [submodule "qtopiagps"]
 	path = qtopiagps
 	url = git://github.com/radekp/qtopiagps.git
+[submodule "arora-neo"]
+	path = arora-neo
+	url = git://github.com/Sektor/arora-neo.git
