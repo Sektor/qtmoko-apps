@@ -14,5 +14,6 @@ SUBDIRS = \
     keyboard-addons/keyboard-skin-silver \
 #    qtopiagps \
     qtpedometer \
-    codecs
+    codecs \
+    arora-neo
 
