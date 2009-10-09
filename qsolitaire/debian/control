@@ -1,0 +1,32 @@
+Source: qsolitaire
+Section: user/games
+Priority: extra
+Maintainer: Forum Nokia <firstname.lastname@company.com>
+Build-Depends: debhelper (>= 5), libqt4-dev
+Standards-Version: 3.7.2
+
+Package: qsolitaire
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, hildon-application-manager
+Description: QSolitaire
+ QSolitaire is solitaire game made with Qt.
+XB-Maemo-Icon-26:
+ iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A
+ /wD/oL2nkwAAAAlwSFlzAAAN1wAADdcBQiibeAAAAAd0SU1FB9kDCwszEfvKsLUAAAOsSURBVEjH
+ 5ZVLaKNVFIC//zVNJi01jZOJpg9m0pbpi2kFRQUrCO6EVhkEZRAX1i5cOMxQRAZEWmbE2jatURDR
+ hdJqq4VufMCgpVBacTMLF6NuhjYxndFqaDPpnzT//9/rIk1N0/Sl6MYDF+7rnO+cc++5F/4j0f6G
+ jhd4ANgEUv+WY4+rqroOSEAA00DrPzF4Ejhd1M6oqvp7a2trempqSo6MjAi/358EHOBT4MxRAM3A
+ D1se79s0TRM9PT1OOBy2vV7vOmADHwP1pQwrO5Lv9S7X1dXVhsNhysvLEULsao7jYBgGa2trdHV1
+ MTAwQHd3NzMzM9nBwcF0Mpn0AB8AlwCz1GXwZTKZK/39/bS3t6PrOoqS80NKiW3bWJZFNptlY2OD
+ hoYGVlZWsvF4XOvo6CAYDGq9vb2uQCCQWVxcPCuEaAE+zxvXC0AeAMMwsNbXSMWWsCwLoWpo99aQ
+ jS2RNTewbRt5l49EIkFVVZWIxWLbzqyurtLZ2Xm8oqKCvr6+c0DZ1u3cAdqWxHfz3HjtEgDuU/WE
+ 3vmIW8MDbC7fBKCy9yKytg4ppSjWdRyHRCJhA9nCebVkodz/ICefeAqAmguvAuBqbMpBzp3nWHNb
+ fusuUCAQIBKJpIHP8tHsGdEx3wnc1XW5fDa1cefnGyTnruF5+FEqnnwGy7JyFCFkoZ6u60xPT1up
+ VMoNDOxYO+i+i80MscHX0X0nuPvFCzhFy4UDv9/P8PBwFvgEuHlg6grll/fCbMaW8Pe8jHrcs5NS
+ EJGmaUxOTtqmaRrAlWI7B4L++HIGFIXU9/O7oxXC3q4Nn4/R0dEs8CGwfCAoXzt5qXzoEXxdT5P8
+ 9mus23EKI1BVVcn3JyYmbNM01VLRlARpmobb7UbXc8fXePkqtc/1oGg6d6bH8Xq9VFdXEwqFtkEe
+ j4exsTEbeB+IHwokpUTXdQzDAOCeUD01TS2cevZ51udnqcpsEAwGMQwDKSVSSmd8fNxOp9MSeGOv
+ I1AP+9rWv/ASWpmLn95+s9ApYZqmiEQiDvAucPtIoPgXM/wYvgrAXNdjANy69hVOJs2vc99szymK
+ IhcWFoxMJmMDb+3naMk6qmxqoeniZQDKqny51+Lsfbvm8qkGIsBvhwWlACzLojzUSEOocSe8uY3K
+ v54eFEUhGo0qQPKgaIpBCeD60NBQh6Ioisvlyh82QojivhONRuXs7KwPeGVL90jSqOv69cP8sFsZ
+ 6C/+PPeSvTb5gMp99CQQ2/q+/6fyJyfdh94K/gBcAAAAAElFTkSuQmCC

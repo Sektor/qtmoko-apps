@@ -1,0 +1,10 @@
+#!/bin/sh -e
+
+gtk-update-icon-cache -f /usr/share/icons/hicolor
+
+#oldversion="$2"
+#if [ -z "$oldversion" ]; then
+#	  maemo-select-menu-location qsolitaire.desktop 
+#fi
+
+exit 0

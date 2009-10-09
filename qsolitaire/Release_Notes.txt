@@ -1,0 +1,328 @@
+Qt: QSolitaire Game Example v1.3
+================================
+
+This Qt C++ example application is a cross-platform Solitaire game that runs 
+in different Qt environments such as the S60 platform, Maemo, and desktop 
+Windows. The application uses the Qt Graphics View Framework and SVG graphics 
+for drawing 2D graphics. The application supports touch UI.
+
+The application has been tested to work with the Qt for S60 4.5.2 Tower 
+release and Qt for Maemo on the Nokia N900.
+
+-------------------------------------------------------------------------------
+
+PREREQUISITES
+
+- Qt basics.
+- Qt Graphics View Framework (http://doc.trolltech.com/4.5/graphicsview.html).
+
+-------------------------------------------------------------------------------
+
+IMPORTANT FILES/CLASSES
+
+- TableauWidget.h
+
+  - The main UI control that shows Qt Graphics View Framework QGraphicsView.
+
+- SolitaireScene.h
+
+  - The Graphics View Framework scene class that shows QGraphicsSvgItems.
+
+- Card.h
+
+  - Card QGraphicsSvgItem
+
+- Deck.h
+
+  - Deck QGraphicsSvgItem
+
+- Foundation.h
+
+  - Foundation QGraphicsSvgItem
+
+- Waste.h
+
+  - Waste QGraphicsSvgItem
+
+- Stock.h
+
+  - Stock QGraphicsSvgItem
+
+- CardDeck.h
+
+  - A Deck class for the cards.
+
+- GameLogic.h
+
+  - Solitaire game logic.
+
+Important classes: QGraphicsView, QGraphicsSvgItems, QGraphicsScene, QWidget.
+
+-------------------------------------------------------------------------------
+
+KNOWN ISSUES
+
+The application can be built with Qt 4.5.2, but Qt 4.5.3 or newer is required 
+on the Nokia N900.
+
+In Maemo 5 with Qt 4.5.2, when trying to drag a card, the whole canvas moves. 
+This can be fixed by defining setProperty("FingerScrollable", false) for all 
+widgets.
+
+-------------------------------------------------------------------------------
+
+TOUCH UI SUPPORT
+
+The Qt Graphics View Framework supports pointer events. Events are handled in:
+
+  void SolitaireScene::mousePressEvent(QGraphicsSceneMouseEvent *mouseEvent)
+  void SolitaireScene::mouseMoveEvent(QGraphicsSceneMouseEvent *mouseEvent)
+  void SolitaireScene::mouseReleaseEvent(QGraphicsSceneMouseEvent *mouseEvent)
+
+QGraphicsScene forwards events to QGraphicsSvgItems child class.
+
+-------------------------------------------------------------------------------
+
+NOTES FOR SYMBIAN DEVELOPERS
+
+The QObject Qt base class does not initialise class member variables to zero 
+as the Symbian CBase class does.
+
+Qt uses Implicit Data Sharing. Implicit sharing automatically detaches the 
+object from the shared block if the object is about to change and if the 
+reference count is greater than one (this is often called "copy-on-write".) An 
+implicitely shared class has total control of its internal data. In any member 
+functions that modify its data, it automatically detaches before modifying the 
+data. Read more and see a list of classes that support this at 
+http://doc.trolltech.com/4.0/shclass.html.
+
+-------------------------------------------------------------------------------
+
+DESIGN CONSIDERATIONS
+
+The screen size of the application varies on different platforms by giving 
+different values for the tableauWidget:
+
+On the S60 platform, the application is designed to run in full-screen 
+landscape or portrait mode to optimise the screen size for the game. This is 
+defined with tableauWidget->showFullScreen() in main.cpp. A custom Exit label 
+is also implemented.
+
+In Windows, a fixed window size of 640x320 with a menu is used.
+
+In Maemo (and on other possible platforms), the application is defined to have 
+the maximum screen size with a menubar. This is defined with 
+tableauWidget->showMaximized(). The application always runs in landscape mode.
+
+-------------------------------------------------------------------------------
+
+RUNNING THE EXAMPLE
+
+The user can tap and drag-and-drop the cards using a finger or the stylus. 
+Once a game is over, there is a possibility for a new game. Exit is provided 
+by a custom label (on the S60 platform) or by a platform-specific Exit button.
+
+-------------------------------------------------------------------------------
+
+BUILD & INSTALLATION INSTRUCTIONS
+
+Readymade installation packages for different platforms can be found in the 
+folder QSolitaire/install.
+
+Preparations
+~~~~~~~~~~~~
+Check that you have Qt installed in the developer environment and on the 
+device.
+
+
+Build & installation instructions for S60 platform
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Building from Carbide.c++ IDE
+"""""""""""""""""""""""""""""
+Carbide.c++ 2.0 supports Qt. You can import and build the project from the 
+.pro project file:
+
+1. Make sure the path for the current Carbide workspace does not contain any
+   white-space characters. If necessary, select a new workspace folder from
+   File > Switch workspace.
+
+2. Extract the example package to a temporary folder.
+
+3. From the menu, select File > Import.
+
+4. Select: Qt > Qt project.
+
+5. Select Next.
+
+6. Browse to qsolitaire.pro (Qt project file).
+
+7. Select Next.
+
+8. Select Symbian platform S60_5th_Edition_SDK_v1.0.
+
+9. Select Finish.
+
+The project is now ready to be built.
+
+Mobile device (S60 5th Edition)
+'''''''''''''''''''''''''''''''
+1. Select Project > Properties > Carbide.c++ > Build Configurations.
+
+2. Set Configuration: "Phone Release (GCCE) [S60_<edition version>]" and then 
+   select OK.
+
+3. Select the SIS Builder tab.
+
+4. Select Add.
+
+5. Select SIS File Creation Options > PKG File: src/src_gcce_urel.pkg.
+
+6. Define Output File Name: qsolitaire.sis.
+
+7. Select Signing Options > Self sign sis file.
+
+8. Define Signed SIS File Name: qsolitaire.sisx.
+
+9. Install the signed .sisx file on an S60 5th Edition device.
+   If you get a Certificate error during the installation of a self-signed
+   package, check that App.Manager > Settings > Software Installation is set
+   to All.
+
+Emulator (WINSCW) (S60 5th Edition)
+'''''''''''''''''''''''''''''''''''
+1. Select Project > Properties > C/C++ Build.
+
+2. Set Configuration: "Emulator debug (WINSCW) [S60_5th_Edition_SDK_v1.0]" and
+   then select OK.
+
+3. Select Project > Build project.
+
+4. Select Run > Run As > Run Symbian OS Application.
+
+
+Building from the command line
+""""""""""""""""""""""""""""""
+
+Mobile device (S60 5th Edition)
+'''''''''''''''''''''''''''''''
+1. Compile the example:
+
+    qmake
+    make
+
+2. Make and sign the sis:
+
+    cd QSolitaire/src
+    createpackage src_gcce_urel.pkg
+
+   Install the self-signed src_gcce_urel.sisx into device.
+
+
+Build & installation instructions for Maemo 5 Fremantle
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Prerequisites
+"""""""""""""
+- Scratchbox must be installed.
+- Xephyr must be installed.
+- Qt libraries (obtainable from http://qt4.garage.maemo.org) must be installed 
+  under Scratchbox as follows:
+  * libqt4-dev must be installed under Scratchbox.
+
+Creating a deb package
+""""""""""""""""""""""
+1. Launch Scratchbox.
+
+2. Extract the files from the QSolitaire ZIP archive.
+
+3. Go to the folder where qnac.pro is located.
+
+4. Create the .deb package:
+
+    dpkg-buildpackage -rfakeroot -b
+
+5. qsolitaire_1.1.2_armel.deb is created.
+
+Manual build
+""""""""""""
+1. Go to the folder where qsolitaire.pro is located.
+
+2. To manually build the source, you can run the following command:
+
+    qmake && make
+
+3. Check that the qsolitaire binary was created.
+
+Running in Scratchbox with Xephyr
+"""""""""""""""""""""""""""""""""
+1. Launch Xephyr and Scratchbox:
+
+    Xephyr :2 -host-cursor -screen 800x480x16 -dpi 96 -ac -extension Composite &
+    scratchbox
+
+2. Under Scratchbox, run the following commands to use Xephyr and 
+   initialise the Hildon environment:
+
+    export DISPLAY=":2"
+    af-sb-init.sh start
+
+3. Install the .deb package:
+
+    dpkg -i qsolitaire_xxx.deb
+
+4. Run the application.
+
+Installing and Running on Maemo device
+""""""""""""""""""""""""""""""""""""""
+
+Enabling root access:
+1. Menu > App manager > Application manager > Application catalogues 
+> Maemo Extras Devel > Untick Disabled > Save
+2. Browse > Application manager > Search > Type rootsh > Search > rootsh
+
+Wait for the Application manager to install the application:
+3. Menu > More > X Terminal
+sudo gainroot
+dpkg -i path/to/debian-package.deb
+
+-------------------------------------------------------------------------------
+
+COMPATIBILITY
+
+- S60 5th Edition SDK and Qt 4.5.2 Tower
+- Maemo 5 (Fremantle) and Qt 4.5.2
+- QtCreator 1.2
+
+Tested on:
+
+- Nokia 5800 XpressMusic, Nokia N97, Nokia N900, Microsoft Windows Vista
+
+Developed with:
+
+- S60 5th Edition SDK for Symbian OS and Qt 4.5.2 Tower
+- Maemo 5 and Qt 4.5.2
+
+-------------------------------------------------------------------------------
+
+VERSION HISTORY
+
+1.3 The bug in the undo feature when moving the cards fixed.
+
+1.2 Support for the Nokia N900 checked.
+
+1.1 Qt 4.5.2 for S60 Tower release fixes:
+    - QMainWindow now gets the correct screen size in resizeEvent(), 
+        workaround removed.
+    - Card.h QGraphicsSvgItem uses DeviceCoordinateCache to tune up card 
+        drawing.
+    - The user can not open many Exit dialogs.
+    
+1.0 beta First implementation on top of Qt 4.5 Garden.
+
+-------------------------------------------------------------------------------
+
+RELATED DOCUMENTATION
+
+Maemo 5 Beta SDK:
+http://maemo.org/development/sdks/maemo_5_beta_sdk/
