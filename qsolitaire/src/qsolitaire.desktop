@@ -1,13 +1,7 @@
 [Desktop Entry]
-Encoding=UTF-8
-Version=1.0
+Comment[]=Solitaire game
+Exec=qsolitaire
+Icon=qsolitaire/qsolitaire
 Type=Application
-Name=QSolitaire
-Exec=/usr/bin/qsolitaire
-Icon=qsolitaire
-StartupWMClass=
-X-Window-Icon=qsolitaire
-X-HildonDesk-ShowInToolbar=true
-X-Osso-Type=application/x-executable
-Terminal=false
+Name[]=QSolitaire
 

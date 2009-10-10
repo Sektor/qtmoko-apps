@@ -16,11 +16,11 @@
 #include "GameLogic.h"
 
 
-TableauWidget::TableauWidget(QWidget *parent)
+TableauWidget::TableauWidget(QWidget *parent, Qt::WFlags f)
     : QMainWindow(parent)
     {
     setWindowTitle("QSolitaire");
-    createMenus();
+    //createMenus();
     
     setProperty("FingerScrollable", false);
     

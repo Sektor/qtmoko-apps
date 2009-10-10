@@ -13,6 +13,7 @@ SUBDIRS = \
     keyboard-addons/keyboard-russian-abc \
     keyboard-addons/keyboard-skin-silver \
 #    qtopiagps \
+    qsolitaire \
     qtpedometer \
     codecs \
     arora-neo

@@ -21,7 +21,7 @@ class TableauWidget: public QMainWindow
     Q_OBJECT
     
     public: // Constructor
-        TableauWidget(QWidget *parent = 0);
+        TableauWidget(QWidget *parent = 0, Qt::WFlags f = 0);
         ~TableauWidget();
     
     private:
