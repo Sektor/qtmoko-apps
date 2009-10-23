@@ -4,5 +4,6 @@
         <file>pics/expert.png</file>
         <file>pics/intermediate.png</file>
         <file>pics/greensudoku.png</file>
+        <file>pics/close.png</file>
     </qresource>
 </RCC>

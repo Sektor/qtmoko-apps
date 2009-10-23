@@ -54,6 +54,8 @@ MainWindow::MainWindow( QWidget* parent, Qt::WFlags f ) :
         m_sudoku, SLOT( startIntermediate() ) );
     gameMenu->addAction( QPixmap( ":pics/expert.png" ), tr("Expert"), 
         m_sudoku, SLOT( startExpert() ) );
+    gameMenu->addAction( QPixmap( ":pics/close.png" ), tr("Close"),
+        QCoreApplication::instance(), SLOT( quit() ) );
 
     hintAction = new QAction( tr("Show hint"), gameMenu );
     hintAction->setCheckable( true );
@@ -65,7 +67,7 @@ MainWindow::MainWindow( QWidget* parent, Qt::WFlags f ) :
     connect( m_sudoku, SIGNAL( gameEnded( bool, QTime ) ),
              this, SLOT( endGame( bool, QTime ) ) );
 
-    QTimer::singleShot(0, this, SLOT(newGame()));
+    //QTimer::singleShot(0, this, SLOT(newGame()));
 }
 
 MainWindow::~MainWindow()
