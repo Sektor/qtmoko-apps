@@ -23,6 +23,7 @@
 #include "sudokuboard.h"
 #include "logitem.h"
 
+#include <stdlib.h>
 #include <iostream>
 #include <vector>
 using namespace std;
