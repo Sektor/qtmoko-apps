@@ -1,0 +1,8 @@
+<RCC>
+    <qresource >
+        <file>pics/beginner.png</file>
+        <file>pics/expert.png</file>
+        <file>pics/intermediate.png</file>
+        <file>pics/greensudoku.png</file>
+    </qresource>
+</RCC>

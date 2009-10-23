@@ -1,0 +1,9 @@
+This is a little game to install on your Greenphone.
+Enjoy it ;)
+
+It uses qqwing, a sudoku solver and generator
+ * Copyright (C) 2006 Stephen Ostermiller
+ * http://ostermiller.org/qqwing/
+ * Copyright (C) 2007 Jacques Bensimon (jacques@ipm.com)
+
+--Nicolas

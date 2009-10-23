@@ -1,0 +1,6 @@
+[Desktop Entry]
+Comment=Sudoku for Greenphone
+Exec=greensudoku
+Icon=greensudoku/greensudoku
+Type=Application
+Name[]=Green Sudoku

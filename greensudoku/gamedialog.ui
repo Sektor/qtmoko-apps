@@ -1,0 +1,136 @@
+<ui version="4.0" >
+ <class>GameDialog</class>
+ <widget class="QDialog" name="GameDialog" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>240</width>
+    <height>199</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Game</string>
+  </property>
+  <layout class="QVBoxLayout" >
+   <property name="margin" >
+    <number>9</number>
+   </property>
+   <property name="spacing" >
+    <number>6</number>
+   </property>
+   <item>
+    <widget class="QPushButton" name="continueButton" >
+     <property name="palette" >
+      <palette>
+       <active>
+        <colorrole role="Button" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>170</red>
+           <green>255</green>
+           <blue>127</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </active>
+       <inactive>
+        <colorrole role="Button" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>170</red>
+           <green>255</green>
+           <blue>127</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </inactive>
+       <disabled>
+        <colorrole role="Button" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>170</red>
+           <green>255</green>
+           <blue>127</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </disabled>
+      </palette>
+     </property>
+     <property name="text" >
+      <string>Continue game</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="beginnerButton" >
+     <property name="text" >
+      <string>Beginner</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="intermediateButton" >
+     <property name="text" >
+      <string>Intermediate</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="expertButton" >
+     <property name="text" >
+      <string>Expert</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_3" >
+     <property name="title" >
+      <string>Options</string>
+     </property>
+     <property name="flat" >
+      <bool>true</bool>
+     </property>
+     <layout class="QVBoxLayout" >
+      <property name="margin" >
+       <number>9</number>
+      </property>
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <item>
+       <widget class="QCheckBox" name="hintCheckBox" >
+        <property name="text" >
+         <string>Show hint</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer>
+     <property name="orientation" >
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" >
+      <size>
+       <width>222</width>
+       <height>16</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>continueButton</tabstop>
+  <tabstop>beginnerButton</tabstop>
+  <tabstop>intermediateButton</tabstop>
+  <tabstop>expertButton</tabstop>
+  <tabstop>hintCheckBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
