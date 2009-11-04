@@ -10,3 +10,6 @@
 [submodule "qtbackup"]
 	path = qtbackup
 	url = git://github.com/ghislain/qtbackup.git
+[submodule "nerongps"]
+	path = nerongps
+	url = git://github.com/radekp/NeronGPS.git
