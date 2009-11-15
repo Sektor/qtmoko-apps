@@ -13,3 +13,6 @@
 [submodule "nerongps"]
 	path = nerongps
 	url = git://github.com/radekp/NeronGPS.git
+[submodule "qmokoplayer"]
+	path = qmokoplayer
+	url = git://github.com/radekp/qmokoplayer.git
