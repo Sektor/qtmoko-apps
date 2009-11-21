@@ -16,3 +16,6 @@
 [submodule "qmokoplayer"]
 	path = qmokoplayer
 	url = git://github.com/radekp/qmokoplayer.git
+[submodule "spectemu"]
+	path = spectemu
+	url = git://github.com/radekp/spectemu.git
