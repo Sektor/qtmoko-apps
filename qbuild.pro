@@ -16,5 +16,6 @@ SUBDIRS = \
     qsolitaire \
     qtpedometer \
     codecs \
-    arora-neo
+    arora-neo \
+    gqsync
 
