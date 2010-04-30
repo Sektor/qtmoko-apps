@@ -19,3 +19,6 @@
 [submodule "spectemu"]
 	path = spectemu
 	url = git://github.com/radekp/spectemu.git
+[submodule "qdictopia"]
+	path = qdictopia
+	url = git://github.com/radekp/qdictopia.git
