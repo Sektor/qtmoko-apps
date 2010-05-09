@@ -22,3 +22,6 @@
 [submodule "qdictopia"]
 	path = qdictopia
 	url = git://github.com/radekp/qdictopia.git
+[submodule "phonetiq"]
+	path = phonetiq
+	url = git://github.com/radekp/phonetiq.git
