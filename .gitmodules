@@ -25,3 +25,6 @@
 [submodule "phonetiq"]
 	path = phonetiq
 	url = git://github.com/radekp/phonetiq.git
+[submodule "qgcide"]
+	path = qgcide
+	url = git://github.com/radekp/qgcide.git
