@@ -7,11 +7,7 @@
 # i just downloaded them to my build host, unpacked (ar -xv <file>.deb, tar -xvzf data.tar.gz)
 # and placed content into /opt/toolchains/debian-armel/
 
-ARMEL_ROOT=/opt/toolchains/debian-armel
-
-LIBS += -L/$$ARMEL_ROOT/usr/lib -lfreetype -ljpeg -lfontconfig -lexpat
-
-
+LIBS += -L$$MKSPEC.LIBDIR -lfreetype -ljpeg -lfontconfig -lexpat
 
 # Also please note that port require qt extendedc configured with -rtti switch. It is very easy
 # to avoid (only 2 dynamic casts per code, in rare used functions), but will require minor patch.
@@ -19,7 +15,7 @@ LIBS += -L/$$ARMEL_ROOT/usr/lib -lfreetype -ljpeg -lfontconfig -lexpat
 
 # set this variable to the absolute path with poppler source (this dir)
 # for some reason qbuild fail to work correctly with relative paths. 
-INC = /home/varien/src/qtmoko/src/3rdparty/libraries/poppler
+INC = $$shellQuote($$path(,project))
 
 TEMPLATE=lib
 
@@ -283,7 +279,6 @@ SOURCES +=   qt4/src/poppler-annotation.cc \
 
 
 
-INCLUDEPATH += $$INC $$INC/goo/ $$INC/poppler/ $$INC/qt4/src/  \
-        /$$ARMEL_ROOT/usr/include \
-        /$$ARMEL_ROOT/usr/include/freetype2
+INCLUDEPATH += $$INC $$INC/goo/ $$INC/poppler/ $$INC/qt4/src/ \
+        $$MKSPEC.INCDIR/freetype2
         
