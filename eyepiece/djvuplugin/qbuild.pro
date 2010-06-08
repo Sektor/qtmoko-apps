@@ -11,8 +11,9 @@ CONFIG += no_pkg
 HEADERS += djvuplugin.h
 SOURCES += djvuplugin.cpp
 
-INCLUDEPATH += ../application
+INCLUDEPATH += $$shellQuote($$path(,project))/../application \
+    $$MKSPEC.INCDIR
 
 # Dependencies
-LIBS += -ldjvulibre
+LIBS += -L $$MKSPEC.LIBDIR -ldjvulibre -ljpeg
 

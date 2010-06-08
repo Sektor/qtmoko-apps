@@ -60,11 +60,11 @@ pics [
 #  files = eyepiece.html
 #]
 
-#pdfplugin [
-#  hint=image generated
-#  files=../pdfplugin/libpdfplugin.so
-#  path=/plugins/eyepiece
-#]
+pdfplugin [
+  hint=image generated
+  files=../pdfplugin/libpdfplugin.so
+  path=/plugins/eyepiece
+]
 
 djvuplugin [
   hint=image generated

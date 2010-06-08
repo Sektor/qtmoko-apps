@@ -4,6 +4,6 @@ CONFIG += ordered
 
 SUBDIRS = \
     application \
-#    pdfplugin \
+    pdfplugin \
     djvuplugin
 

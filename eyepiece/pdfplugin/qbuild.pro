@@ -11,9 +11,9 @@ CONFIG += no_pkg
 HEADERS += pdfplugin.h
 SOURCES += pdfplugin.cpp
 
-INCLUDEPATH += ../application
-#INCLUDEPATH += /opt/toolchains/arm920t-eabi/arm-angstrom-linux-gnueabi/include/poppler/qt4
+INCLUDEPATH += $$shellQuote($$path(,project))/../application
+
+LIBS += -L $$MKSPEC.LIBDIR -ljpeg -lfontconfig -lfreetype -lexpat
 
 # Dependencies
-LIBS += -lpoppler-qt4
-
+MODULES += poppler

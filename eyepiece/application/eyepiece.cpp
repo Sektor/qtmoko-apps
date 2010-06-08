@@ -38,7 +38,7 @@ Eyepiece::Eyepiece ( QWidget *parent, Qt::WFlags f ) :
 	documentSelector = new QDocumentSelector;
 
 	QContentSet contentSet;
-        //contentSet.addCriteria ( QContentFilter::MimeType, mime_pdf,  QContentFilter::Or );
+        contentSet.addCriteria ( QContentFilter::MimeType, mime_pdf,  QContentFilter::Or );
 	contentSet.addCriteria ( QContentFilter::MimeType, mime_djvu, QContentFilter::Or );
 	documentSelector->setFilter ( contentSet.filter() );
 
@@ -386,19 +386,16 @@ bool Eyepiece::loadPlugin()
 
 	QDir pluginDirectory ( qApp->applicationDirPath() );
 	qWarning() << qApp->applicationDirPath();
-
+          
         QString fName;
 	if ( contentID == mime_pdf )        // TODO: refine
         {
-                //fName = "libpdfplugin.so";
-                QMessageBox::warning(this,tr("eyepiece"),tr("PDF files are currently not supported"));
-                return false;
+                fName = "libpdfplugin.so";
         }
 	else if ( contentID == mime_djvu )
                 fName = "libdjvuplugin.so";
 	else
 		return false;
-
         QString fPath1 = qApp->applicationDirPath() + "/../plugins/eyepiece/";
         QString fPath2 = qApp->applicationDirPath() + "/plugins/";
         QString fileName;
@@ -408,7 +405,6 @@ bool Eyepiece::loadPlugin()
             fileName = fPath2 + fName;
 
 	qWarning() << fileName;
-
 	//pluginLoader = new QPluginLoader ( pluginDirectory.absoluteFilePath ( fileName ) );
 	pluginLoader.setFileName ( pluginDirectory.absoluteFilePath ( fileName ) );
 	plugin = pluginLoader.instance();
