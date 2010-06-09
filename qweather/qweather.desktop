@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name[]=Yahoo! Weather
+Comment[]=Yahoo! Weather
+Exec=qweather
+Icon=qweather/QWeather
+Type=Application
+Categories=Application;
