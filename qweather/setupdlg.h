@@ -26,9 +26,10 @@ class SetupDlg: public QDialog
         QSettings   *settings;
         QPushButton *saveBtn;
         QPushButton *cancelBtn;
+        QPushButton *helpBtn;
     private slots:
         void btnSaveClick();
-
+        void btnHelpClick();
 };
 
 #endif // SETUPDLG_H

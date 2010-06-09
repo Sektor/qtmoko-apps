@@ -25,7 +25,7 @@ void QWeather::getSettings()
 {
     qDebug() << "read settings";
     QSettings *settings = new QSettings("TQWeather", "YahooWeather");
-    cityCode = settings->value("City", "MGXX0003").toString();
+    cityCode = settings->value("City", "44418").toString();
     cf = settings->value("TempType", "c").toString();
     emit settingsReaded();
     qDebug() << http->state();
@@ -34,7 +34,7 @@ void QWeather::getSettings()
 
 void QWeather::sendRequest()
 {
-    QHttpRequestHeader header("GET", QString("/forecastrss?p=%1&u=%2").arg(cityCode).arg(cf)); //getQuery.toUtf8());
+    QHttpRequestHeader header("GET", QString("/forecastrss?w=%1&u=%2").arg(cityCode).arg(cf)); //getQuery.toUtf8());
     http->setHost("weather.yahooapis.com");
     header.setValue("HOST", "weather.yahooapis.com");
     header.setValue("Content-Encoding", "gzip");
