@@ -31,9 +31,10 @@ YWeatherInfo::YWeatherInfo(QWidget *parent)
     pressure = new QLabel(tr("Barometer:"));
     pressureValue = new QLabel;
     weatherStateImg = new QLabel;
-    weatherStateImg->setBaseSize(QSize(32,32));
-    weatherStateImg->setGeometry(QRect(0,0,32,32));
-    weatherStateImg->setScaledContents(true);
+    weatherStateImg->setFixedSize(48, 48);
+    //weatherStateImg->setBaseSize(QSize(32,32));
+    //weatherStateImg->setGeometry(QRect(0,0,32,32));
+    //weatherStateImg->setScaledContents(true);
     layout = new QGridLayout;
     layout->addWidget(country, 0, 0);
     layout->addWidget(countryValue, 0 ,1);
