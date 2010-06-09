@@ -17,5 +17,6 @@ SUBDIRS = \
     qtpedometer \
     codecs \
     arora-neo \
-    gqsync
+    gqsync \
+    qweather
 
